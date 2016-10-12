@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /**
  * Created by Jun on 10/9/2016.
  */
+require('./rxjx-extensions');
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
@@ -24,6 +25,7 @@ var heroes_component_1 = require('./heroes.component');
 var hero_detail_component_1 = require('./hero-detail.component');
 var hero_service_1 = require('./hero.service');
 var dashboard_component_1 = require('./dashboard.component');
+var hero_search_component_1 = require('./hero-search.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -58,7 +60,8 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 hero_detail_component_1.HeroDetailComponent,
                 heroes_component_1.HeroesComponent,
-                dashboard_component_1.DashboardComponent
+                dashboard_component_1.DashboardComponent,
+                hero_search_component_1.HeroSearchComponent
             ],
             providers: [
                 hero_service_1.HeroService
